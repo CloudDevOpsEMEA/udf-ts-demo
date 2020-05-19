@@ -1,0 +1,45 @@
+$TTL    10080
+@       IN      SOA     ns1.f5telemetry-demo.eu. root.f5telemetry-demo.eu. (
+                              3         ; Serial
+                             30         ; Refresh
+                             10         ; Retry
+                           5040         ; Expire
+                          21600 )       ; Negative Cache TTL
+;
+;@      IN      NS      localhost.
+;@      IN      A       127.0.0.1
+;@      IN      AAAA    ::1
+
+;Name Server Information
+
+@        IN      NS      ns1.f5telemetry-demo.eu.
+
+;IP address of Name Server
+
+ns1     IN      A       10.1.1.5
+
+;A – Record HostName To Ip Address
+
+bigip                 IN       A      10.1.1.4
+
+jumphost              IN       A      10.1.1.5
+mattermost            IN       A      10.1.1.5
+
+elasticsearch         IN       A      10.1.1.6
+logstash              IN       A      10.1.1.6
+kibana                IN       A      10.1.1.6
+
+graphite              IN       A      10.1.1.7
+statsd                IN       A      10.1.1.7
+grafana-graphite      IN       A      10.1.1.7
+
+kafka                 IN       A      10.1.1.8
+zookeeper             IN       A      10.1.1.8
+kafkadrop             IN       A      10.1.1.8
+
+prometheus            IN       A      10.1.1.9
+grafana-prometheus    IN       A      10.1.1.9
+
+;CNAME record
+
+;ftp     IN      CNAME   www.f5telemetry-demo.eu.

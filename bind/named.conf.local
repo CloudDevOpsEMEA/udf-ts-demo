@@ -1,0 +1,11 @@
+zone "f5telemetry-demo.eu" IN {
+    type master;
+    file "forward.f5telemetry-demo.eu";
+    allow-update { any; };
+};
+
+zone "1.1.10.in-addr.arpa" IN {
+     type master;
+     file "reverse.f5telemetry-demo.eu";
+     allow-update { any; };
+};

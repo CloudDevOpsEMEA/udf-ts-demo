@@ -1,0 +1,35 @@
+$TTL    10080
+@       IN      SOA     f5telemetry-demo.eu. root.f5telemetry-demo.eu. (
+                              3         ; Serial
+                             30         ; Refresh
+                             10         ; Retry
+                           5040         ; Expire
+                          21600 )       ; Negative Cache TTL
+;
+;@      IN      NS      localhost.
+;1.0.0  IN      PTR     localhost.
+
+;Name Server Information
+
+@       IN      NS    ns1.f5telemetry-demo.eu.
+
+;Reverse lookup for Name Server
+
+5      IN      PTR    ns1.f5telemetry-demo.eu.
+
+;PTR Record IP address to HostName
+
+4      IN      PTR    bigip.f5telemetry-demo.eu.
+5      IN      PTR    jumphost.f5telemetry-demo.eu.
+5      IN      PTR    mattermost.f5telemetry-demo.eu.
+6      IN      PTR    elasticsearch.f5telemetry-demo.eu.
+6      IN      PTR    logstash.f5telemetry-demo.eu.
+6      IN      PTR    kibana.f5telemetry-demo.eu.
+7      IN      PTR    graphite.f5telemetry-demo.eu.
+7      IN      PTR    statsd.f5telemetry-demo.eu.
+7      IN      PTR    grafana-graphite.f5telemetry-demo.eu.
+8      IN      PTR    kafka.f5telemetry-demo.eu.
+8      IN      PTR    zookeeper.f5telemetry-demo.eu.
+8      IN      PTR    kafkadrop.f5telemetry-demo.eu.
+9      IN      PTR    prometheus.f5telemetry-demo.eu.
+9      IN      PTR    grafana-prometheus.f5telemetry-demo.eu.
