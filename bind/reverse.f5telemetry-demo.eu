@@ -33,3 +33,6 @@ $TTL    10080
 8      IN      PTR    kafkadrop.f5telemetry-demo.eu.
 9      IN      PTR    prometheus.f5telemetry-demo.eu.
 9      IN      PTR    grafana-prometheus.f5telemetry-demo.eu.
+11     IN      PTR    gitlab.f5telemetry-demo.eu.
+11     IN      PTR    jenkins.f5telemetry-demo.eu.
+11     IN      PTR    spinnaker.f5telemetry-demo.eu.
