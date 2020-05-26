@@ -35,4 +35,6 @@ $TTL    10080
 9      IN      PTR    grafana-prometheus.f5telemetry-demo.eu.
 11     IN      PTR    gitlab.f5telemetry-demo.eu.
 11     IN      PTR    jenkins.f5telemetry-demo.eu.
-11     IN      PTR    spinnaker.f5telemetry-demo.eu.
+11     IN      PTR    awx.f5telemetry-demo.eu.
+11     IN      PTR    consul.f5telemetry-demo.eu.
+11     IN      PTR    vault.f5telemetry-demo.eu.

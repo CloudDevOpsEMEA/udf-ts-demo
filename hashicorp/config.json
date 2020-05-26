@@ -1,0 +1,23 @@
+{
+    "server": true,
+    "ui": true,
+    "advertise_addr":"10.1.1.11",
+    "bind_addr": "0.0.0.0",
+    "bootstrap_expect": 1,
+    "datacenter": "UDF",
+    "data_dir": "/var/lib/consul",
+    "log_level": "INFO",
+    "log_file": "/var/log/consul/",
+    "node_name": "consul",
+    "enable_debug": true,
+    "key_file": "/home/ubuntu/private_key.pem",
+    "cert_file": "/home/ubuntu/wildcard_cert.pem",
+    "addresses": {
+        "http": "0.0.0.0",
+        "https": "0.0.0.0"
+      },
+    "ports": {
+        "http": 8500,
+        "https": 8501
+    }
+}
